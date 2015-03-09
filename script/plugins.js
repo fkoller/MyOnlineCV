@@ -38,6 +38,14 @@ jQuery(document).ready(function() {
     });
 });
 
+/* Animation Progress-Bar */
+jQuery(document).ready(function() {
+    jQuery('.progress-bar').addClass("hidden-new").viewportChecker({
+        classToAdd: 'visible-new animated slideInLeft',
+        offset: 100
+    });
+});
+
 /*
 
 
