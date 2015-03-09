@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/scrolling.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css">
 
 </head>
 <body>
@@ -80,31 +81,64 @@
 </section>
 
 <section class="container-fluid" id="section2">
+    <h2 class="text-center">Change this Content. Change the world.</h2>
     <div class="row">
-        <div class="col-sm-8 col-sm-offset-2 text-center">
-            <h1>What is Bootstrap?</h1>
-            <br>
-            <p class="lead">Bootstrap is a free collection of tools for creating websites and web applications. It contains HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. It is the No.1 project on GitHub with 65,000+ stars and 23,800 forks (as of March 2014) [1] and has been used by NASA and MSNBC, among many others..</p>
-            <br>
-            <i style="font-size:120px" class="fa fa-camera fa-5x"></i>
-            <p>Big 'ol Camera Icon</p>
+        <div class="col-sm-8 col-sm-offset-2">
+            <img src="/assets/example/bg_smartphones.jpg" class="img-responsive center-block ">
+            <p class="text-center">Images will scale down proportionately as browser width narrows.</p>
         </div>
     </div>
 </section>
 
 <section class="container-fluid" id="section3">
     <h1 class="text-center">Bootstrap is Responsive</h1>
-    <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-            <h3 class="text-center">Vertical scrolling has become a popular and lasting trend in Web design.</h3>
-            <div class="row">
-                <div class="col-xs-4 col-xs-offset-1">Some brand-tacular designs even have home page content that is taller that 12,000 pixels. That's a lotta content.</div>
-                <div class="col-xs-2"></div>
-                <div class="col-xs-4 text-right">Anyhoo, this is just some random blurb of text, and Bootply.com is a playground and code editor for Bootstrap.</div>
+    <div class="container skills">
+        <div class="row">
+            <div class="col-md-6 col-lg-2">
+                <h3>First value</h3>
+                <div class="progress">
+                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+                        20%
+                        <span class="sr-only">20% Complete (success)</span>
+                    </div>
+                </div>
             </div>
-            <p class="text-center">
-                <img src="/assets/example/img_mtnpeople.png" class="img-responsive center-block ">
-            </p>
+            <div class="col-md-6 col-lg-2">
+                <h3>Second value</h3>
+                <div class="progress">
+                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-info" role="progressbar">
+                        40%
+                        <span class="sr-only">40% Complete (info)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <h3>Third value</h3>
+                <div class="progress">
+                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-warning" role="progressbar">
+                        60%
+                        <span class="sr-only">60% Complete (warning)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <h3>Fourth value</h3>
+                <div class="progress">
+                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-danger" role="progressbar">
+                        80%
+                        <span class="sr-only">80% Complete (danger)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+                <h3>Fifth value</h3>
+                <div class="progress">
+                    <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-primary" role="progressbar">
+                        100%
+                        <span class="sr-only">100% Complete (normal)</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -225,7 +259,7 @@
             <p>http://www.facebook.com/sergiomandrake</p>
         </div>
         <ul class="timeline">
-            <li>
+            <li class="timeline-left">
                 <div class="timeline-badge info"><i class="glyphicon glyphicon-hand-left"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -254,7 +288,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li class="timeline-left">
                 <div class="timeline-badge danger"><i class="glyphicon glyphicon-eye-open"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -277,7 +311,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li class="timeline-left">
                 <div class="timeline-badge default"><i class="glyphicon glyphicon-home"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -302,7 +336,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li class="timeline-left">
                 <div class="timeline-badge default"><i class="glyphicon glyphicon-arrow-left"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -337,7 +371,7 @@
             <p>http://www.facebook.com/sergiomandrake</p>
         </div>
         <ul class="timeline">
-            <li>
+            <li class="timeline-left">
                 <div class="timeline-badge info"><i class="glyphicon glyphicon-hand-left"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -366,7 +400,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li class="timeline-left">
                 <div class="timeline-badge danger"><i class="glyphicon glyphicon-eye-open"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -389,7 +423,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li class="timeline-left">
                 <div class="timeline-badge default"><i class="glyphicon glyphicon-home"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -414,7 +448,7 @@
                     </div>
                 </div>
             </li>
-            <li>
+            <li class="timeline-left">
                 <div class="timeline-badge default"><i class="glyphicon glyphicon-arrow-left"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -426,13 +460,14 @@
                 </div>
             </li>
             <li class="timeline-inverted">
-                <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+                <div class="timeline-badge success"><i class="glyphicon glyphicon-baby-formula"></i></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
-                        <h4 class="timeline-title">Oldest event</h4>
+                        <h4 class="timeline-title">Geburt</h4>
+                        <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 20. Januar 1988 </small></p>
                     </div>
                     <div class="timeline-body">
-                        <p>Add more progress events and milestones to the left or right side of the timeline. Each event can be tagged with a date and given a beautiful icon to symbolize it's spectacular meaning.</p>
+                        <p>Geboren in Berlin</p>
                     </div>
                 </div>
             </li>
@@ -488,6 +523,11 @@
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/jquery-viewport-checker/src/jquery.viewportchecker.js"></script>
 <script src="script/plugins.js"></script>
 </body>
 </html>
+
+<!--
+<i class="glyphicon glyphicon-thumbs-up"></i>
+-->

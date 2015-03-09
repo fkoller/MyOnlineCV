@@ -21,49 +21,37 @@ $('a[href*=#]:not([href=#])').click(function() {
     }
 });
 
+
+/* Animation von Rechts für Timeline-Inverted */
+jQuery(document).ready(function() {
+    jQuery('.timeline-inverted').addClass("hidden-new").viewportChecker({
+        classToAdd: 'visible-new animated bounceInRight',
+        offset: 100
+    });
+});
+
+/* Animation von Links für Timeline-Left */
+jQuery(document).ready(function() {
+    jQuery('.timeline-left').addClass("hidden-new").viewportChecker({
+        classToAdd: 'visible-new animated bounceInLeft',
+        offset: 100
+    });
+});
+
 /*
 
-jQuery(document).ready(function($){
-    var $timeline_block = $('.cd-timeline-block');
 
-    //hide timeline blocks which are outside the viewport
-    $timeline_block.each(function(){
-        if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
-            $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
-            console.log('Is-Hidden angewandt');
-        }
+var bar = $('.progress-bar');
+var progress = $('.skills');
+$(function(){
+    if(progress.viewportChecker()) {
+        console.log('Testeintrag');
+    $(bar).each(function(){
+        bar_width = $(this).attr('aria-valuenow');
+        $(this).width(bar_width + '%');
+        console.log('zweiter eintrag');
     });
-
-    //on scolling, show/animate timeline blocks when enter the viewport
-    $(window).on('scroll', function(){
-        $timeline_block.each(function(){
-            if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
-                console.log('reingekommen');
-                $(this).find('.cd-timeline-img').removeClass('is-hidden').addClass('bounce-in');
-                $(this).find('cd-timeline-content').removeClass('is-hidden').addClass('is-visible');
-                console.log('etwas geändert');
-            }
-        });
-    });
-});
-
-
-
-$(window).on('scroll', function(){
-    var $timeline_block = $('.cd-timeline-block');
-    $timeline_block.each(function(){
-        if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-block').hasClass('is-hidden') ) {
-            $(this).find('.cd-timeline-block').removeClass('is-hidden').addClass('bounce-in');
-        }
-    });
-});
-
-$(window).on('scroll', function() {
-
-    if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 ){
-        $('#reihe2').fadeToggle(400);
     };
-
 });
 
 */

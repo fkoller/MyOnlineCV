@@ -297,10 +297,29 @@ Timeline CSS
     }
 }
 
+.hidden-new {
+    opacity: 0;
+}
+
+.visible-new {
+    opacity: 1;
+}
+
+.progress-bar {
+    -webkit-transition: width 1.5s ease-in-out;
+    transition: width 1.5s ease-in-out;
+}
+h3 {
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
 
 /*
 Testeinträge
-*/
+
 
 .cssanimations .cd-timeline-img.is-hidden {
     visibility: hidden;
@@ -334,3 +353,5 @@ Testeinträge
         transform: scale(1);
     }
 }
+
+*/
